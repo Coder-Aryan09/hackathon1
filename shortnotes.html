@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Section</title>
+</head>
+<body bgcolor="#DCFFC2">
+    <center>
+        <u><h1>Lecture Wise Summary Notes!</h1></u>
+    </center>
+    <br>
+    <nav>
+       <span > 
+                <b><a href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <font size="5">🏠Home</font> 
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></b>
+                <b><a href="outline.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <font size="5">📑Outline</font>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></b>
+                <b><a href="shortnotes.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <font size="5">📝Notes Section</font>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></b>
+                <b><a href="topicwise.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <font size="5">🎥Lectures</font>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></b>
+        </span>
+    </nav>
+
+    <br><br>
+    <center><h2><u>Lecture 1 : Introduction to Development</u></h2></center>
+    
+    <ul>
+  <li><strong>Basic Networking:</strong> Computers share data by sending bits (0s and 1s) as electrical or light signals. Small networks can use direct cables, but larger ones need <em>switches</em> to connect devices in a LAN. To connect different LANs, <em>routers</em> are used. The Internet is a massive network of networks connected by routers.</li>
+
+  <li><strong>IP Addresses:</strong> Every device on the Internet has a unique IP. IPv4 uses 32 bits (~4.3 billion addresses), but IPv6 uses 128 bits (~3.4×10<sup>38</sup> addresses). Private IPs (like 192.168.x.x) work inside local networks, while public IPs identify networks globally. Routers forward packets hop by hop using these addresses.</li>
+
+  <li><strong>Packets and TCP/IP:</strong> Large data is split into packets containing a data piece, source/destination IPs, and sequence numbers. Packets may take different routes, and the receiver reassembles them. TCP ensures reliable, ordered delivery and retransmits missing packets.</li>
+
+  <li><strong>MAC Addresses:</strong> Each device has a unique 48-bit MAC address (e.g., 3C:22:FB:A3:B4:C5) hard-coded into hardware. Switches use MAC addresses to deliver data locally, while routers use IP addresses for traffic across networks.</li>
+
+  <li><strong>Port Numbers:</strong> Ports identify services on a device:
+    <ul>
+      <li>Well-known ports (0–1023): Reserved for common services like HTTP (80), HTTPS (443), SSH (22), DNS (53).</li>
+      <li>Registered ports (1024–49151): Used by specific apps/services like MySQL (3306), MongoDB (27017).</li>
+      <li>Dynamic/Ephemeral ports (49152–65535): Assigned temporarily for client-side connections.</li>
+    </ul>
+  </li>
+  <li><strong>DNS (Domain Name System):</strong> Converts domain names into IP addresses through:
+    <ol>
+      <li>Checking local cache (browser/OS/router).</li>
+      <li>Querying a recursive resolver (ISP or public like 8.8.8.8).</li>
+      <li>Resolver contacts root → TLD (.com) → domain’s authoritative server.</li>
+      <li>Authoritative server gives final IP; resolver caches it and returns it.</li>
+    </ol>
+    Finally, the browser connects to that IP (usually on port 443 for HTTPS).
+  </li>
+</ul>
+
+    <br><br>
+    <center><h2><u>Lecture 2 : Introduction to HTML</u></h2></center>
+      
+        <ul>
+  <li><strong>HTML</strong> stands for <em>HyperText Markup Language</em>, the standard language used to create web pages and web applications.</li>
+  
+  <li>It defines the <strong>structure</strong> of a webpage using a system of <em>elements</em> and <em>tags</em>.</li>
+  
+  <li>HTML elements act as the <strong>building blocks</strong> of web pages and organize content in a meaningful way.</li>
+  
+  <li>Commonly used tags include:
+    <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, 
+    <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, <code>&lt;p&gt;</code>, 
+    <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code>, etc.
+  </li>
+  
+  <li>Basic elements:
+    <ul>
+      <li><strong>Headings:</strong> <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></li>
+      <li><strong>Paragraphs:</strong> <code>&lt;p&gt;</code></li>
+      <li><strong>Links:</strong> <code>&lt;a&gt;</code></li>
+      <li><strong>Images:</strong> <code>&lt;img&gt;</code></li>
+    </ul>
+  </li>
+  
+  <li>The structure of an HTML document typically includes:
+    <ul>
+      <li><code>&lt;!DOCTYPE html&gt;</code> declaration</li>
+      <li><code>&lt;html&gt;</code> element</li>
+      <li><code>&lt;head&gt;</code> element</li>
+      <li><code>&lt;body&gt;</code> element</li>
+    </ul>
+  </li>
+  
+  <li><strong>Attributes</strong> add extra information to elements, e.g., 
+    <code>href</code> in links (<code>&lt;a&gt;</code>) and 
+    <code>src</code> in images (<code>&lt;img&gt;</code>).
+  </li>
+  
+  <li>Elements can be <strong>nested</strong> within each other to build complex page layouts.</li>
+  
+  <li><strong>Semantic elements</strong> like <code>&lt;header&gt;</code>, 
+    <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, and 
+    <code>&lt;section&gt;</code> add meaning and improve accessibility.
+  </li>
+
+
+    </ul>
+    <br><br>
+    <center><h2><u>Lecture 3 : HTML Lists & Tables</u></h2></center>
+
+    <ul>
+  <li><strong>HTML</strong> supports three main types of lists: 
+    <code>&lt;ol&gt;</code> (ordered lists), 
+    <code>&lt;ul&gt;</code> (unordered lists), and 
+    <code>&lt;dl&gt;</code> (definition lists).
+  </li>
+
+  <li>
+    <strong>Ordered lists</strong> are used when items follow a specific sequence, while 
+    <strong>unordered lists</strong> are for items without a particular order.
+  </li>
+
+  <li>List items are defined using the <code>&lt;li&gt;</code> tag.</li>
+
+  <li><strong>Definition lists</strong> consist of 
+    <code>&lt;dt&gt;</code> (term) and 
+    <code>&lt;dd&gt;</code> (definition).
+  </li>
+
+  <li>Lists can be <strong>nested</strong> inside other lists to create sublists.</li>
+
+  <li>
+    <p><strong>Example of an unordered list:</strong></p>
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ul>
+
+    <p><strong>Example of an ordered list:</strong></p>
+    <ol>
+      <li>First Step</li>
+      <li>Second Step</li>
+      <li>Third Step</li>
+    </ol>
+  </li>
+
+  <li><strong>HTML tables</strong> are used to display data in a structured tabular format.</li>
+
+  <li>The <code>&lt;table&gt;</code> element defines a table, 
+      <code>&lt;tr&gt;</code> defines a row, 
+      <code>&lt;td&gt;</code> defines a cell, and 
+      <code>&lt;th&gt;</code> defines a header cell.</li>
+
+  <li>Tables can have captions using the <code>&lt;caption&gt;</code> tag.</li>
+
+  <li>Attributes like <code>colspan</code> and <code>rowspan</code> allow cells to span multiple columns or rows.</li>
+
+  <li>
+    <h4>Example of a simple table:</h4>
+    <table border="1" cellpadding="6" cellspacing="0">
+      <caption><strong>Student Information</strong></caption>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th colspan="2">Location</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Aryan</td>
+        <td rowspan="2">20</td>
+        <td>City</td>
+        <td>Noida</td>
+      </tr>
+      <tr>
+        <td>State</td>
+        <td>Uttar Pradesh</td>
+      </tr>
+      <tr>
+        <td>Rohit</td>
+        <td>22</td>
+        <td colspan="2">Noida, Uttar Pradesh</td>
+      </tr>
+    </table>
+  </li>
+</ul>
+
+    <br><br>
+    <center><h2><u>Lecture 4 : File Paths & Naming Conventions</u></h2></center>
+   
+<p>Websites have many files (HTML, images, etc.). File paths tell the browser where to find each file. Correct paths ensure links and images work on any computer or server.</p>
+
+<h3>Relative Paths</h3>
+<ul>
+  <li><strong>Same folder:</strong> Use the filename directly. Example: <code>&lt;a href="about.html"&gt;About&lt;/a&gt;</code>.</li>
+  <li><strong>Subfolder:</strong> Include the folder name. Example: <code>&lt;img src="images/logo.png" alt="Logo"&gt;</code> (if <em>logo.png</em> is in an "images" folder).</li>
+  <li><strong>Parent folder:</strong> Use <code>../</code> to go up one level. Example: In <em>pages/contact.html</em>, use <code>&lt;img src="../images/logo.png"&gt;</code>.</li>
+</ul>
+
+<h3>Absolute Paths</h3>
+<p>Absolute paths use the full URL and start with <code>http://</code> or <code>https://</code>. Use them for external resources.</p>
+<ul>
+  <li>External link: <code>&lt;a href="https://www.example.com"&gt;Example&lt;/a&gt;</code>.</li>
+  <li>External image: <code>&lt;img src="https://example.com/image.png" alt="Image"&gt;</code>.</li>
+  <li>Never use OS file paths (like <code>C:\Users\</code>) in HTML; browsers cannot access your computer’s files for security.</li>
+</ul>
+
+<h3>Rules of Thumb</h3>
+<ul>
+  <li><strong>Internal files:</strong> Use relative paths (e.g. <code>page.html</code> or <code>folder/file.png</code>).</li>
+  <li><strong>External resources:</strong> Use absolute URLs (starting with <code>https://</code>).</li>
+  <li><strong>Windows vs. macOS/Linux:</strong> Windows paths start with a drive letter and use backslashes (e.g. <code>C:\Users\John\file.txt</code>). macOS/Linux paths start from the root <code>/</code> and use forward slashes (e.g. <code>/Users/john/file.txt</code>).</li>
+</ul>
+
+
+    <br><br>
+    <center><h2><u>Lecture 5 : HTML Forms</u></h2></center>
+   
+    <ul>
+  <li><strong>HTML forms</strong> are used to <em>collect user input</em> on a webpage.</li>
+
+  <li>The <code>&lt;form&gt;</code> element defines a form, which can contain various input fields such as:
+    <ul>
+      <li><code>&lt;input type="text"&gt;</code> → single-line text field</li>
+      <li><code>&lt;input type="radio"&gt;</code> → radio buttons</li>
+      <li><code>&lt;input type="checkbox"&gt;</code> → checkboxes</li>
+      <li><code>&lt;input type="submit"&gt;</code> → submit button</li>
+    </ul>
+  </li>
+
+  <li>Other form elements include:
+    <ul>
+      <li><code>&lt;textarea&gt;</code> → for multi-line text input</li>
+      <li><code>&lt;select&gt;</code> → for dropdown menus</li>
+    </ul>
+  </li>
+
+  <li>Forms are submitted to a server using:
+    <ul>
+      <li><strong>action</strong> → specifies the URL to send the data</li>
+      <li><strong>method</strong> → specifies the HTTP method (<code>GET</code> or <code>POST</code>)</li>
+    </ul>
+  </li>
+
+  <li><strong>Form validation</strong> can be done using HTML5 attributes like 
+      <code>required</code>, <code>pattern</code>, and <code>maxlength</code>.</li>
+
+  <li>
+    <h4>Example of a simple form:</h4>
+    <form action="/submit" method="post">
+      <label for="name"><strong>Name:</strong></label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+      <label for="email"><strong>Email:</strong></label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+      <label><strong>Gender:</strong></label><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br><br>
+
+      <label><strong>Hobbies:</strong></label><br>
+      <input type="checkbox" id="sports" name="hobbies" value="sports">
+      <label for="sports">Sports</label>
+      <input type="checkbox" id="music" name="hobbies" value="music">
+      <label for="music">Music</label><br><br>
+
+      <label for="country"><strong>Country:</strong></label><br>
+      <select id="country" name="country">
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+      </select><br><br>
+
+      <label for="message"><strong>Message:</strong></label><br>
+      <textarea id="message" name="message" rows="4" cols="30" placeholder="Write your message..."></textarea><br><br>
+
+      <input type="submit" value="Submit Form">
+    </form>
+  </li>
+</ul>
+
+    <br><br>
+    <center><h2><u>Lecture 6 : HTML Media & Deployment</u></h2></center>
+    
+    <ul>
+  <li>
+    <strong>HTML Media Elements</strong> allow embedding and displaying multimedia content in webpages:
+    <ul>
+      <li><code>&lt;img&gt;</code> → used to embed images. Attributes include <code>src</code>, <code>alt</code>, <code>width</code>, and <code>height</code>.</li>
+      <li><code>&lt;audio&gt;</code> → used to embed audio files. Supports attributes like <code>controls</code>, <code>autoplay</code>, <code>loop</code>, and <code>muted</code>.</li>
+      <li><code>&lt;video&gt;</code> → used to embed video files. Attributes include <code>controls</code>, <code>autoplay</code>, <code>loop</code>, <code>poster</code>, and <code>muted</code>.</li>
+      <li><code>&lt;iframe&gt;</code> → used to embed another webpage or external content (like YouTube videos, maps) inside the current page. Attributes include <code>src</code>, <code>width</code>, <code>height</code>, and <code>frameborder</code>.</li>
+    </ul>
+
+    <h4>Examples:</h4>
+    <p><strong>Image:</strong></p>
+    <img src="image.png" alt="Sample Image" width="350px">
+
+    <p><strong>Audio:</strong></p>
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p><strong>Video:</strong></p>
+    <video width="250" controls>
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+
+    <p><strong>Iframe (YouTube Example):</strong></p>
+    <iframe width="400" height="250" src="https://www.youtube.com/embed/NGYp1zCBthk" title="Deploy Your First Project | Media Tag | Multi Page Website | HTML Full Course #05" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </li>
+
+  <li><strong>Netlify</strong> is a platform for <em>deploying and hosting static websites</em> and web applications.</li>
+
+  <li>To deploy a project on Netlify, you first need to <strong>create an account</strong> and log in.</li>
+
+  <li>You can deploy your project by either:
+    <ul>
+      <li>Connecting your <strong>Git repository</strong> (GitHub, GitLab, or Bitbucket)</li>
+      <li>Uploading your project files directly via the Netlify dashboard</li>
+    </ul>
+  </li>
+
+  <li><strong>Continuous Deployment</strong> is supported: every time you push changes to the connected repo, Netlify automatically rebuilds and redeploys your site.</li>
+
+  <li>Netlify also provides powerful features like:
+    <ul>
+      <li>Custom domains</li>
+      <li>Free HTTPS (SSL certificates)</li>
+      <li>Form handling</li>
+      <li>Serverless functions</li>
+      <li>Automatic scaling</li>
+    </ul>
+  </li>
+</ul>
+
+</body>
+</html>
